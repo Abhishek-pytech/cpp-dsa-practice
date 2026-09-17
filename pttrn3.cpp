@@ -216,6 +216,16 @@ void print14(int n){
     }
 }
 
+void print15(int n){
+    for(int i=0;i<n;i++){
+        char ch='A'+i;
+        for(int j=0;j<=i;j++){
+            cout<<ch;
+
+        }
+        cout<<endl;
+    }
+}
 
 
 
@@ -232,6 +242,6 @@ int main(){
     int n;
     cout<<"Enter a number: ";
     cin>> n;
-    print14(n);
+    print15(n);
     return 0;
 }
