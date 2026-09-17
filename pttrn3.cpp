@@ -197,7 +197,14 @@ void print12(int n){
     }
 }
 
-
+void print13(int n){
+    for(int i=0;i<n;i++){
+        for(char ch='A'; ch <= 'A' + i; ch++){
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
 
 
 
@@ -215,6 +222,6 @@ int main(){
     int n;
     cout<<"Enter a number: ";
     cin>> n;
-    print12(n);
+    print13(n);
     return 0;
 }
