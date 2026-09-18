@@ -4,7 +4,7 @@ int sum(int a, int b){
     return a+b;
 }
 int main(){
-    int s=sum(1,3);
-    cout<<s;
+    int u=sum(1,3);
+    cout<<u;
     return 0;
 }
