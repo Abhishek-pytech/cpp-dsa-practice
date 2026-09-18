@@ -5,7 +5,8 @@ int sum(int a, int b){
 }
 int main(){
     int n1,n2;
-    cout<< "Enter your first number : " <<endl <<"Enter yourr second number: ";
+    cout<< "Enter your first number : ";
+    cout<<"Enter your second number: ";
     cin >> n1 >> n2;
     cout<< n1<<endl<<n2;
     return 0;
