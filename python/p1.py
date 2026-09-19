@@ -1,8 +1,7 @@
-n1,n2=input("Enter number: ").split()
-if n1==n2:
-    print(f"{n1}and {n2} are equeal")
-elif n1>n2:
-    print(f"{n1} is the greater number than {n2}")
+n=int(input("Enter a number : "))
+if n==0:
+    print('zero')
+elif n>=0:
+    print("positive")
 else:
-    print(f"{n2} is the greater number than {n1}")
-    
+    print("negative")
