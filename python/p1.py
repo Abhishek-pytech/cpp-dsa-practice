@@ -1,7 +1,6 @@
-n=int(input("Enter a number : "))
-if n==0:
-    print('zero')
-elif n>=0:
-    print("positive")
+num=int(input("Enter a number: "))
+
+if num%2==0:
+    print("even")
 else:
-    print("negative")
+    print("odd")
