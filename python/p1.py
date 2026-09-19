@@ -1,8 +1,8 @@
-x,y,z=map(int,input("Enter a number: ").split())
+year = int(input("Enter a year: "))
 
-if x>y and x>z:
-    print(x)
-elif y>x and y>z:
-    print(y)
-elif z>x and z>y:
-    print(z)
+if year % 400 == 0:
+    print("leap year")
+elif year % 4 == 0 and year % 100 != 0:
+    print("leap year")
+else:
+    print("not a leap year")
