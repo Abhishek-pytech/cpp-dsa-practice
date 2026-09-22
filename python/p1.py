@@ -18,12 +18,24 @@
 
 
 
-num=int(input("Enter a number :"))
-count=0
-while num>0:
-    num=num//10
-    count+=1
-print(count)
+nums=[2,1,7,9,8 ,4]
+max=nums[0]
+for  i in range(len(nums)):
+    if nums[i]>max:
+        max=nums[i]
+nums.remove(max)
+
+print(nums)
+
+        
+
+  
+
+        
+# print(max)
+        
+    
+    
     
 
     
