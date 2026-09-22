@@ -1,41 +1,11 @@
-# # txt="python"
-# # # for i in txt[::-1]:
-# # #     print(i)
-# # feq={}
-# # count=0
-# # for ch in txt:
-# #     if ch  in feq:
-# #         feq[ch]+=1
-# #     else:
-# #         feq[ch]=1
-# # print(feq)
-   
-# n=int((input("enetr number")))  
-# for i in range(n):
-#     for j in range(n+1):
-#         print("*", end=" ")
-#     print()
-
-
-
-nums=[2,1,7,9,8 ,4]
-max=nums[0]
-for  i in range(len(nums)):
-    if nums[i]>max:
-        max=nums[i]
-nums.remove(max)
-
-print(nums)
-
-        
-
-  
-
-        
-# print(max)
-        
+n=int(input("Enter a number: "))
+count=0
+while n>0:
+    r=n%10
     
-    
-    
-
+    if r%2==0:
+        count+=1
+    n//=10
+        
+print(count)
     
