@@ -23,11 +23,11 @@ void explainVectorp(){
     vector<pair<int, int>> vp;
     vp.push_back({1, 2});
     vp.emplace_back(3, 4);
-    for(const auto& value : vp)
+    for(const pair<int, int>& value : vp)
         cout << value.first << " " << value.second << endl;
 }
 
 int main(){
-    explainVector();
+    explainVectorp();
    
 }
