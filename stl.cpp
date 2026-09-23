@@ -29,9 +29,11 @@ void explainVectorp(){
 
 void explainvectorsize(){
     vector<int> v(3,4);
+    for (int value : v)
+        cout << value << " ";
 }
 
 int main(){
-    explainVectorp();
+    explainvectorsize();
    
 }
