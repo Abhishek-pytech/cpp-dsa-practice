@@ -1,16 +1,15 @@
 n=int(input("Enter a number: "))
-num=n
-rev=0
-
-while n>0:
-    r=n%10
-    n//=10
-    rev=rev*10+r
-print(rev)
+fact=1
+i=1
+while i<=0:
+    print(i)
+    i+=1
     
-if rev==num:
-    print("yes")
-else:
-    print("no")
+    
+    
+
+    
+
+
     
     
