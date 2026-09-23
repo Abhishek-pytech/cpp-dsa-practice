@@ -32,9 +32,19 @@ void explainvectorsize(){
     vector<int>v1(v);
     for (int value : v1)
         cout << value << " ";
+
+
+}
+
+void explainvectorit(){
+    vector<int> v = {1, 2, 3, 4};
+    vector<int>::iterator it=v.begin();
+    it++;
+    cout<<*(it)<<" ";
+
 }
 
 int main(){
-    explainvectorsize();
+    explainvectorit();
    
 }
