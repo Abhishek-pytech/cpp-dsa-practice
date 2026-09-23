@@ -28,8 +28,9 @@ void explainVectorp(){
 }
 
 void explainvectorsize(){
-    vector<int> v(4);
-    for (int value : v)
+    vector<int> v(4,20);
+    vector<int>v1(v);
+    for (int value : v1)
         cout << value << " ";
 }
 
