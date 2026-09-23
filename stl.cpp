@@ -41,6 +41,11 @@ void explainvectorit(){
     vector<int>::iterator it=v.begin();
     it++;
     cout<<*(it)<<" ";
+    
+
+    it=it+2;
+    cout<<*(it);
+    cout << v.back();
 
 }
 
