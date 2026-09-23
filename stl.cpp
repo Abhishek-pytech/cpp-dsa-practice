@@ -12,12 +12,21 @@ void explainpair(){
  }
 
 void explainVector(){
-    vector<int>v={};
+    vector<int>v;
     v.push_back(1);
     v.emplace_back(2);
     for(int value: v)
     cout<<value <<endl;
 }
+
+void explainVectorp(){
+    vector<pair<int, int>> vp;
+    vp.push_back({1, 2});
+    vp.emplace_back(3, 4);
+    for(const auto& value : vp)
+        cout << value.first << " " << value.second << endl;
+}
+
 int main(){
     explainVector();
    
