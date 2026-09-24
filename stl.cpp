@@ -77,8 +77,19 @@ void explainDeque(){
     }
 }
 
+void explainStack(){
+    stack<int> st;
+    st.push(1);
+    st.push(2);
+    st.push(7);
+
+    cout<<st.top();
+    
+
+}
+
 
 int main(){
-    explainDeque();
+    explainStack();
    
 }
