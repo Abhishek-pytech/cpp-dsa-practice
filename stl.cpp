@@ -54,6 +54,9 @@ void explainlist(){
     list<int>ls;
     ls.push_back(1);
     ls.push_front(2);
+    ls.emplace_back(3);
+    ls.emplace_front(4);
+
 
     for(int l:ls){
         cout<<l;
