@@ -65,8 +65,17 @@ void explainlist(){
 
 }
 
+void explainDeque(){
+    deque<int>dq;
+    dq.push_back(1);
+
+    for(int d:dq){
+        cout<<d;
+    }
+}
+
 
 int main(){
-    explainlist();
+    explainDeque();
    
 }
