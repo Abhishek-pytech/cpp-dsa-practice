@@ -45,7 +45,7 @@ void explainvectorit(){
 
     it=it+2;
     cout<<*(it);
-    cout << v.back();
+    cout << v.back();  
 
 }
 
