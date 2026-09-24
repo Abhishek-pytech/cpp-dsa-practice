@@ -39,6 +39,7 @@ void explainvectorsize(){
 void explainvectorit(){
     vector<int> v = {1, 2, 3, 4};
     vector<int>::iterator it=v.begin();
+    it = v.end();
     it++;
     cout<<*(it)<<" ";
     
@@ -49,8 +50,20 @@ void explainvectorit(){
 
 }
 
+void explainlist(){
+    list<int>ls;
+    ls.push_back(1);
+    ls.push_front(2);
+
+    for(int l:ls){
+        cout<<l;
+    }
+
+
+}
+
 
 int main(){
-    explainvectorit();
+    explainlist();
    
 }
