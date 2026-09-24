@@ -83,7 +83,8 @@ void explainStack(){
     st.push(2);
     st.push(7);
 
-    cout<<st.top();
+    cout<<st.top()<<endl;
+    cout<<st.size();
     
 
 }
