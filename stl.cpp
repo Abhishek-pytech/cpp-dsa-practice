@@ -89,8 +89,14 @@ void explainStack(){
 
 }
 
+void explainQueue(){
+    queue<int> q;
+    q.push(1);
+
+}
+
 
 int main(){
-    explainStack();
+    explainQueue();
    
 }
