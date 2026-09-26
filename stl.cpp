@@ -105,6 +105,7 @@ void explainpq(){
     pq.push(1);
     pq.push(3);
     pq.push(2);
+    pq.push(2);
 
     cout << pq.top();
 
