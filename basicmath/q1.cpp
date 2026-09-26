@@ -18,7 +18,7 @@ int main(){
     int n;
     cout<<"Enter a number: ";
     cin>>n;
-    cout<<"The number of digit in "<<n <<"is " <<cnt;
+    
 
     digitproblem(n, cnt);
     return 0;
