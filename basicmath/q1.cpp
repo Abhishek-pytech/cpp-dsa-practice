@@ -23,6 +23,8 @@ void factprint(int n){
 
     }
     cout<<fact;
+
+
     
 
     
