@@ -20,22 +20,31 @@ void factprint(int n){
     int fact=1;
     for(int i=1; i<=n;i++){
         fact*=i;
-
     }
-    cout<<fact;
-
-
-    
-
-    
-
-
-
+    cout<<fact<<"\n";
 }
+
+void amstrong(int n){
+    int original = n;
+    int sum=0;
+    while(n>0){
+        int ls=n%10;
+        n/=10;
+        ls = ls * ls * ls;
+        sum += ls;
+    }
+
+    if(sum == original){
+        cout << "Armstrong number\n";
+    } else {
+        cout << "Not an Armstrong number\n";
+    }
+}
+
 int main(){
     int n;
     cout<<"Enter a number:";
     cin>>n;
-    factprint(n);
+    amstrong(n);
     return 0;
 }
