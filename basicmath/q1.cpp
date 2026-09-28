@@ -57,6 +57,19 @@ bool perfectnumber(int n){
 
 }
 
+void prime(int n){
+    for(int i=1;i<=n;i++){
+        if(n%1==0 and n%n==0){
+            cout<<"prime";
+            break;
+        }
+        else{
+            cout<<"No";
+        }
+
+    }
+}
+
 
 
 
@@ -69,6 +82,6 @@ int main(){
     int n;
     cout<<"Enter a number:";
     cin>>n;
-    perfectnumber(n);
+    prime( n);
     return 0;
 }
