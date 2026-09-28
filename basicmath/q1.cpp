@@ -100,16 +100,21 @@ int count = 0;
 }
 
 void Divisors(int n){
+    vector<int>v;
+
     for(int i=1;i<=n;i++){
 
         if(n%i==0){
-            cout<<i;
+            v.push_back(i);
         }
 
 
 
 
 
+    }
+    for (int divisor : v) {
+        cout << divisor << ' ';
     }
 }
 
