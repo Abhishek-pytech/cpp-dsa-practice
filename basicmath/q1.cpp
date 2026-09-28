@@ -76,8 +76,26 @@ void prime(int n){
 }
 
 
+bool prime2(int n){
+   
+int count = 0;
 
+        for (int i = 2; i <= n; i++) {
 
+            int divisor = 0;
+
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    divisor++;
+                }
+            }
+
+            if (divisor == 2) {
+                count++;
+            }
+        }
+
+        return count;
 
 
 
@@ -88,6 +106,6 @@ int main(){
     int n;
     cout<<"Enter a number:";
     cin>>n;
-    prime( n);
+    cout<<prime2( n);
     return 0;
 }
