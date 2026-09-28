@@ -99,6 +99,20 @@ int count = 0;
 
 }
 
+void Divisors(int n){
+    for(int i=1;i<=n;i++){
+
+        if(n%i==0){
+            cout<<i;
+        }
+
+
+
+
+
+    }
+}
+
 
 
 
@@ -108,6 +122,6 @@ int main(){
     int n;
     cout<<"Enter a number:";
     cin>>n;
-    cout<<prime2( n);
+    Divisors(n);
     return 0;
 }
