@@ -58,17 +58,23 @@ bool perfectnumber(int n){
 }
 
 void prime(int n){
+    int cnt=0;
     for(int i=1;i<=n;i++){
-        if(n%1==0 and n%n==0){
-            cout<<"prime";
-            break;
+        
+        if(n%i==0){
+            cnt++;
         }
-        else{
-            cout<<"No";
-        }
+    
+    }
+    if(cnt==2){
+        cout<<"yes";
 
     }
+    else{
+        cout<<"no";
+    }
 }
+
 
 
 
