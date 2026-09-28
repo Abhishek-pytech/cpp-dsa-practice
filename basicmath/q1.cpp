@@ -41,7 +41,7 @@ void amstrong(int n){
     }
 }
 
-void perfectnumber(int n){
+bool perfectnumber(int n){
     int sum=0;
     for(int i=1;i<n;i++){
         if(n%i==0){
@@ -49,7 +49,11 @@ void perfectnumber(int n){
         }
         
     }
-    cout<<sum;
+    // cout<<sum;
+    if(sum==n){
+        return true;
+    }
+    return false;
 
 }
 

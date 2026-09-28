@@ -1,1 +1,1 @@
-ha
+cout<<sum;
