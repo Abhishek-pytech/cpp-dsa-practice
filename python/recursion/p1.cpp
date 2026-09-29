@@ -1,21 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
-int cnt=0;
+int n=1;
 void f(){
-    if(cnt==9){
-        return ;
-
-    }
-    else{
-        cout<<cnt;
-        cnt++;
-    }
-    f();
+    if(n == 6)
+        return;
     
+
+    cout << n;
+    n++;
+
+    f();
 }
 
-
 int main(){
+    
+
     f();
     return 0;
 }
