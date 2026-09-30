@@ -1,20 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
-int n=5;
-void f(){
-    if(n == 0)
-        return;
+
+void f(int i,int  n){
+    if(i>=n) return;
+
+    cout<<i;
+    f(i+1,n);
     
-
-    cout << n;
-    n--;
-
-    f();
+    
 }
 
 int main(){
-    
+    int n;
+    cout<<"Enter  number: ";
+    cin >> n;
 
-    f();
+    f(1,n);
     return 0;
 }
