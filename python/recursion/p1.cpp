@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void f(int i,int  n){
-    if(i>=n) return;
+void f(int n,int  i){
+    if(i>n) return;
 
-    cout<<i;
-    f(i+1,n);
+    cout<<n;
+    f(n-1,i);
     
     
 }
@@ -15,6 +15,6 @@ int main(){
     cout<<"Enter  number: ";
     cin >> n;
 
-    f(1,n);
+    f(n,1);
     return 0;
 }
