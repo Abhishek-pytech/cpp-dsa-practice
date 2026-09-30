@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int rev=0;
-void f(long long n){
+void f(int  n){
     
     if(n==0) {
         return;
@@ -9,10 +9,7 @@ void f(long long n){
     int ls=n%10;
     n/=10;
     rev=rev*10+ls;
-    
     f(n);
-    
-
 
 }
 
@@ -21,6 +18,12 @@ int main(){
     cout<<"Enter a number : ";
     cin>>n;
     f(n);
-    cout<<rev <<endl;
+    if (n==rev){
+        cout<<"palindrome";
+    }
+    else{
+        cout<<"not palindrome";
+    }
+    cout<<endl;
 
 }
