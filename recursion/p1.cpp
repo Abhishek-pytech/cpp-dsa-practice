@@ -1,25 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
-int sum=1;
-void f(int i,int n){
+int cnt=0;
+void f(long long n){
     
-    if(i>n) {
+    if(n==0) {
         return;
     }
     
-    sum*=i;
+    n/=10;
+    cnt+=1;
     
-    f(i+1,n);
+    f(n);
     
 
 
 }
 
 int main(){
-    int n;
+    long long n;
     cout<<"Enter a number : ";
     cin>>n;
-    f(1,n);
-    cout<<sum <<endl;
+    f(n);
+    cout<<cnt <<endl;
 
 }
