@@ -1,13 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
-int sum=0;
+int sum=1;
 void f(int i,int n){
     
     if(i>n) {
         return;
     }
     
-    sum+=i;
+    sum*=i;
     
     f(i+1,n);
     
