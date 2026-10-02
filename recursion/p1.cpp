@@ -7,7 +7,7 @@ void f(int i) {
     if (i < 1) return;
 
     sum *= i;
-    f(i - 1);
+    f(i - 2);
 }
 
 int main() {
