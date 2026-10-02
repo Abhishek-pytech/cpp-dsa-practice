@@ -2,10 +2,10 @@
 using namespace std;
 
 void f( int i, int n) {
-    if (i<1) return;
-    
+    if(i<1) return;
     f(i-1,n);
-    cout << i;
+    cout<<i;
+    
 }
 
 int main(){
