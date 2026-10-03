@@ -13,5 +13,5 @@ string revString() {
 int main() {
     cout << revString() << '\n';
     return 0;
-    cout<< revString();
+    
 }
