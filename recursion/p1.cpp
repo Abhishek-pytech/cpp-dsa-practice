@@ -1,17 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int fact = 1;
+string cars[5] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
 
 void f(int n) {
-    int arr[n];
-    cout<<arr;
+    cout << "n = " << n << "\n";
 }
 
 int main() {
-    int n;
-    cout << "Enter a number : ";
-    cin >> n;
-    f( n);
+    // int n;
+    // cout << "Enter a number : ";
+    // cin >> n;
+    // f(n);
+
+    for (string car : cars) {
+        cout << car << "\n";
+    }
+
     return 0;
 }
