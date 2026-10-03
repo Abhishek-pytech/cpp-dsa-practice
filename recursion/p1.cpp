@@ -7,12 +7,13 @@ using namespace std;
 
 
 int main() {
+    string rev="";
     string name = "Abhishek";
 
     for (char ch : name) {
-        cout << ch;
+        rev = ch + rev;
     }
-    cout << '\n';
+    cout << rev << '\n';
 
     return 0;
 }
