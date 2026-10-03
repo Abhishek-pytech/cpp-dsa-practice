@@ -1,19 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
-
-
-
-int main() {
-    string rev="";
+string revString() {
     string name = "Abhishek";
-
+    string rev = "";
     for (char ch : name) {
         rev = ch + rev;
     }
-    cout << rev << '\n';
+    return rev;
+}
 
+int main() {
+    cout << revString() << '\n';
     return 0;
+    cout<< revString();
 }
