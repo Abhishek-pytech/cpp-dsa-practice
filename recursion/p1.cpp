@@ -1,17 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string revString() {
-    string name = "Abhishek";
-    string rev = "";
-    for (char ch : name) {
-        rev = ch + rev;
-    }
-    return rev;
+void reverseString(vector<char>& s) {
+        int left = 0;
+        int right = (int)s.size() - 1;
+        while (left < right) {
+            swap(s[left], s[right]);
+            left++;
+            right--;
+        }
 }
 
 int main() {
-    cout << revString() << '\n';
+     reverseString() ;
     return 0;
     
 }
