@@ -1,14 +1,25 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int sum = 0;
-    int car[5] = {10, 20, 30, 40, 50};
-    for(int i : car){
+int main() {
+    int n;
 
-    sum+=i;
+    cout << "Enter the size of array: ";
+    cin >> n;
+
+    int num[n];
+
+    cout << "Enter " << n << " elements:\n";
+
+    for(int i = 0; i < n; i++) {
+        cin >> num[i];
     }
-    cout<<sum;
+
+    cout << "Array elements:\n";
+
+    for(int j : num) {
+        cout << j << "\n";
+    }
 
     return 0;
 }

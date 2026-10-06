@@ -1,1 +1,1 @@
- cout<<sum;
+cout<<"Eneter element "<<i<< ":";
