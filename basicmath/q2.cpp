@@ -1,25 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-int main() {
+void Array(){
     int n;
-
-    cout << "Enter the size of array: ";
-    cin >> n;
-
-    int num[n];
-
-    cout << "Enter " << n << " elements:\n";
-
-    for(int i = 0; i < n; i++) {
-        cin >> num[i];
+    
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
     }
+    int sum=0;
+    for(int i:arr){
+        sum+=i;
 
-    cout << "Array elements:\n";
-
-    for(int j : num) {
-        cout << j << "\n";
     }
+    cout<<sum;
+}
+int main() {
+    Array();
 
     return 0;
 }
