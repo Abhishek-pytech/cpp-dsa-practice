@@ -1,1 +1,1 @@
-cout<<car[3];
+ cout<<sum;
