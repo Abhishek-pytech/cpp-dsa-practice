@@ -1,1 +1,1 @@
-cout<<sum;
+cout<<car[3];
