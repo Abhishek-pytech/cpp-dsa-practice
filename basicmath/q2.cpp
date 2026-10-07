@@ -8,11 +8,12 @@ void Array(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    
+    int fact=1;
     for(int i:arr){
-        cout<<i;
+        fact*=i;
 
     }
+    cout<<fact;
     
 }
 int main() {
