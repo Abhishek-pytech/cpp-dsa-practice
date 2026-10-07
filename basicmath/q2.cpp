@@ -8,12 +8,12 @@ void Array(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int sum=0;
+    
     for(int i:arr){
-        sum+=i;
+        cout<<i;
 
     }
-    cout<<sum;
+    
 }
 int main() {
     Array();
