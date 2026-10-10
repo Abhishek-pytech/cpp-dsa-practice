@@ -1,15 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 void ArrOdd(){
-    int arr [5]= {1,2,3,4,5};
-    int cnt=0;
-    for(int i=0;i<6;i++){
-        if(i%2!=0){
-            cnt+=1;
-        }
+    int arr []= {1,3,9,7,6,4,5};
+    for(int i=0;i<7;i++){
+        cout<<i;
+    
         
     }
-    cout<<cnt;
+    
 
 }
 int main(){
