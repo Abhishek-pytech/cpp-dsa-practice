@@ -1,17 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 void ArrOdd(){
-    int arr []= {1,3,9,7,6,4,5};
-    for(int i=0;i<6;i++){
-        if(arr[i]>arr[i+1]){
-            arr[i+1]=arr[i];
+    int arr []= {1,3,9};
+    for(int i=1;i<3;i++){
+        if(arr[i]>arr[i-1]){
+            
+        }
+        else{
+            cout<<"Unsorted";
+            return;
         }
     
         
     }
-    for(int i=0;i<7;i++){
-        cout<<arr[i]<<" ";
-    }
+    cout<<"Sorted";
+    
     
 
 }
