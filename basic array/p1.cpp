@@ -10,21 +10,21 @@ void ArrOdd(){
         cin>>arr[i];
     }
 
-    for(int i: arr){
-        cout<<i;
-    }
-    // for(int i=0;i<3;i++){
-    //     if(arr[i]<=arr[i+1]){
+    // for(int i: arr){
+    //     cout<<i;
+    // }
+    for(int i=0;i<n;i++){
+        if(arr[i]<=arr[i+1]){
             
-    //     }
-    //     else{
-    //         cout<<"Unsorted";
-    //         return;
-    //     }
+        }
+        else{
+            cout<<"Unsorted";
+            return;
+        }
     
         
-    // }
-    // cout<<"Sorted";
+    }
+    cout<<"Sorted";
     
     
 
