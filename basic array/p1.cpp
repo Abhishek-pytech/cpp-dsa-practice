@@ -1,19 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 void ArrOdd(){
-    int arr []= {1,3,4,6};
-    for(int i=0;i<3;i++){
-        if(arr[i]<=arr[i+1]){
+    int n;
+    cout<<"Enter the size of array: ";
+    cin>>n;
+
+    int arr [n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    for(int i: arr){
+        cout<<i;
+    }
+    // for(int i=0;i<3;i++){
+    //     if(arr[i]<=arr[i+1]){
             
-        }
-        else{
-            cout<<"Unsorted";
-            return;
-        }
+    //     }
+    //     else{
+    //         cout<<"Unsorted";
+    //         return;
+    //     }
     
         
-    }
-    cout<<"Sorted";
+    // }
+    // cout<<"Sorted";
     
     
 
