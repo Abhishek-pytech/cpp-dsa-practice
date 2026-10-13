@@ -19,7 +19,7 @@ int main(){
         }
         
     }
-    cout<<largest<<endl;
+    cout<<"The largest number is: "<<largest<<endl;
     int slargest=-1;
     for(int i=0;i<n;i++){
         if(arr[i]>slargest and arr[i]!=largest){
