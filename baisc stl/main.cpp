@@ -18,8 +18,17 @@ void Vector(){
     }
 }
 
+void Vector1(){
+    vector<int>v(6,2);
+
+    for(auto i:v){
+        cout<<i;
+    }
+}
+
+
 int main(){
-    Vector();
+    Vector1();
 
     return 0;
 }
