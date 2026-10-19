@@ -24,7 +24,7 @@ void ArrOdd(){
     
         
     }
-    cout<<"Sorted";
+    cout<<"The arr is Sorted";
     
     
 
