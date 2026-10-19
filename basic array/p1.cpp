@@ -18,7 +18,7 @@ void ArrOdd(){
             
         }
         else{
-            cout<<"Unsorted";
+            cout<<"The arr is Unsorted";
             return;
         }
     
