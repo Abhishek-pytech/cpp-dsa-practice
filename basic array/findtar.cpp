@@ -2,13 +2,15 @@
 using namespace std;
 int findtarget(){
     int nums[6]={1,2,4,6,3,7};
-    int target=8;
-    for(int i=0;i<6;i++){
-        if(nums[i]==target){
-            return i;
+    int largest=nums[0];
+    int slargest=-1;
+    for(int i=1;i<6;i++){
+        if(nums[i]>=largest){
+            slargest=largest;
+            largest=nums[i];
         }
     }
-    return -1;
+     return slargest;
 }
 int main(){
     cout<<findtarget();
