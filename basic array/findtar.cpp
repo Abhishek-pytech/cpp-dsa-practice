@@ -2,16 +2,15 @@
 using namespace std;
 int findtarget(){
     int nums[6]={1,2,4,6,3,7};
-    int target=7;
+    int target=8;
     for(int i=0;i<6;i++){
         if(nums[i]==target){
-            cout<< i;
-            break;
+            return i;
         }
     }
-    cout<<-1;
+    return -1;
 }
 int main(){
-    findtarget();
+    cout<<findtarget();
     return 0;
 }
