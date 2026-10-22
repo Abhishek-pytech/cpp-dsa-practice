@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int findtarget(){
-    int nums[6]={1,2,4,3,7};
+    int nums[6]={1,2,4,6,3,7};
     int largest=nums[0];
     int slargest=-1;
     for(int i = 0; i < 6; i++) {
