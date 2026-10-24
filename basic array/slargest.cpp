@@ -2,29 +2,13 @@
 using namespace std;
 
 void seclargest(){
-    int n;
-    cout<<"Enter the size of arr: ";
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
 
-    for(int i=1;i<n;i++){
-        if(arr[i]>=arr[i-1]){
+    int arr[6]={1,4,3,2};
+    int largest = arr[0];
+    int secondLargest = INT_MIN;
 
-
-        }
-        else if(arr[i]<=arr[i-1]){
-            arr[i]=arr[i-i];
-        }
-    }
-
-    for(int i=0; i<n;i++){
-        cout<<arr[i];
-    }
-
-
+    sort(arr, arr+6);
+    cout<<arr[6-2];
 }
 int main(){
     seclargest();
