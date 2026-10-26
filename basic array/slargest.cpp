@@ -9,7 +9,56 @@ int seclargest() {
     return res;
 }
 
+int rotedarr(){
+    int nums[6] = {1, 2, 4, 6, 3, 7};
+    int tem = nums[0];
+    int n = sizeof(nums) / sizeof(nums[0]);
+    for (int i = 1; i < n; i++) {
+        nums[i - 1] = nums[i];
+    }
+
+    nums[n - 1] = tem;
+    for (int i = 0; i < n; i++) {
+        cout << nums[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
+
+int Lroted_kplace() {
+    int nums[6] = {1, 2, 4, 6, 3, 7};
+    int n=6;
+    
+    int k = 9;
+    k = k % n;
+    int temp[k];
+    for (int i = 0; i<k; i++) {
+        temp[i]=nums[i];
+    }
+    
+    for(int i=k;i<n;i++){
+        nums[i-k]=nums[i];
+    }
+
+    // int j=0;
+    // for(int i=n-k;i<n;i++){
+    //     nums[i]=temp[j];
+    //     j++;
+    // }
+
+    for(int i=n-k;i<n;i++){
+        nums[i]=temp[i-(n-k)];
+    }
+
+
+    for(int i=0;i<n;i++){
+        cout<<nums[i];
+    }
+
+    
+}
+
 int main() {
-    cout << seclargest() << endl;
+    Lroted_kplace();
     return 0;
 }
