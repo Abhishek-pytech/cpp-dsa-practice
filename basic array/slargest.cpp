@@ -29,7 +29,7 @@ int Lroted_kplace() {
     int nums[6] = {1, 2, 4, 6, 3, 7};
     int n=6;
     
-    int k = 9;
+    int k = 3;
     k = k % n;
     int temp[k];
     for (int i = 0; i<k; i++) {
@@ -58,7 +58,16 @@ int Lroted_kplace() {
     
 }
 
+void palindrom(){
+    string s = "hannah";
+    string str="";
+    for(int i=0;i<s.size();i++){
+        str=s[i]+str;
+    }
+    cout<<str;
+}
+
 int main() {
-    Lroted_kplace();
+    palindrom();
     return 0;
 }
