@@ -65,12 +65,13 @@ void palindrom(){
     for(int i=0;i<s.size();i++){
         str=s[i]+str;
     }
-    if(s==tem){
-        cout<<"palindrom";
+    if(s==str){
+        cout<<"palindrom"<<endl;
     }
     else{
-        cout<<"not palindrom";
+        cout<<"not palindrom"<<endl;
     }
+    cout<<str;
 }
 
 int main() {
