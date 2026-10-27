@@ -59,7 +59,7 @@ int Lroted_kplace() {
 }
 
 void palindrom(){
-    string s = "hannah";
+    string s = "madam";
     string str="";
     for(int i=0;i<s.size();i++){
         str=s[i]+str;
