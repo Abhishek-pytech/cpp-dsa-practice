@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int roted_string(){
+void roted_string(){
     string s = "abcde";
     string goal = "cdeab";
 
@@ -14,17 +14,17 @@ int roted_string(){
         string right = s.substr(i);
 
         if(right + left == goal){
-            
-            return true;
+            cout << "yes";
+            return;
         }
 
         left += s[i];
     }
 
-    return false;
+    cout << "no";
 }
 
 int main(){
-    cout<<roted_string();
+    roted_string();
     return 0;
 }
