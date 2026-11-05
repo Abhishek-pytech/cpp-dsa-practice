@@ -7,6 +7,6 @@ int main() {
     for(int i = 0; i < 6; i++) {
         hashTable[arr[i]]++;
     }
-    cout << hashTable[1] << endl;  // Output: 3
+    cout << hashTable[1] << endl; 
     return 0;
 }
