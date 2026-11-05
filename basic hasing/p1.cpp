@@ -3,10 +3,10 @@ using namespace std;
 
 int main() {
     int arr[] = {5, 6, 5, 6, 9, 6};
-    int hashTable[10] = {0};
+    int hashTable[9] = {0};
     for(int i = 0; i < 6; i++) {
         hashTable[arr[i]]++;
     }
-    cout << hashTable[6] << endl;  // Output: 3
+    cout << hashTable[1] << endl;  // Output: 3
     return 0;
 }
