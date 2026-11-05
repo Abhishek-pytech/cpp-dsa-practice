@@ -3,10 +3,11 @@ using namespace std;
 
 int main() {
     int arr[] = {5, 6, 5, 6, 9, 6};
-    int hashTable[9] = {0};
-    for(int i = 0; i < 6; i++) {
-        hashTable[arr[i]]++;
+    
+    string rev="";
+    for (auto i: arr){
+        rev=to_string(i)+rev;
     }
-    cout << hashTable[9] << endl; 
+    cout<<rev;
     return 0;
 }
