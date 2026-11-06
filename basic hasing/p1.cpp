@@ -53,7 +53,7 @@ public:
 };
 
 int main() {
-    vector<int> nums = {4, 4, 5, 5, 6};
+    vector<int> nums = {4, 4, 5, 5, 6,6,6,6,};
     
     /* Creating an instance of 
     Solution class */
