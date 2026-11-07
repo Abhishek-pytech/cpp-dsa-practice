@@ -3,31 +3,21 @@ using namespace std;
 
 void occurence() {
 
-    int maxFreq = 0;
-    int maxElement = 0;
+    string s = "programming";
+    int n=s.size();
+    int hash[26]={0};
 
-    int arr[] = {1, 2, 2, 3, 3, 3, 4};
+    for(int i=0;i<n;i++){
+        hash[s[i] - 'a']++;
+    }
+
+    for(auto c: s){
+        cout << hash[c - 'a']<<endl;
+
+    }
+
     
-    int n = 7;
 
-    int fash[5] = {0};
-
-    for(int i = 0; i < n; i++) {
-        fash[arr[i]]++;
-        
-    }
-
-    for(int i = 0; i < 5; i++) {
-
-    if(fash[i] > maxFreq) {
-
-        maxFreq = fash[i];
-        maxElement = i;
-
-    }
-}
-cout << "Maximum occurring element = " << maxElement << endl;
-cout << "Frequency = " << maxFreq;
 
     
 }
