@@ -1,20 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void occurence() {
+void frequency() {
 
-    string s = "programming";
-    int n=s.size();
-    int hash[26]={0};
-
-    for(int i=0;i<n;i++){
-        hash[s[i] - 'a']++;
+    int arr[] = {1, 2, 3, 2, 4, 2, 5};
+    int hash[6]={0};
+    for(int i=0;i<7;i++){
+        hash[arr[i]]++;
     }
 
-    for(auto c: s){
-        cout << hash[c - 'a']<<endl;
-
-    }
+    cout<<"frequency of 2 =" <<hash[2];
 
     
 
@@ -23,6 +18,6 @@ void occurence() {
 }
 
 int main() {
-    occurence();
+    frequency();
     return 0;
 }
