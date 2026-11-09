@@ -54,7 +54,28 @@ void maxoccurence(){
 
 
 }
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void character_frequency() {
+
+    string s = "programming";
+    int hash[26] = {0};
+
+    for(auto c : s) {
+        hash[c - 'a']++;
+    }
+
+    for(int i = 0; i < 26; i++) {
+        if(hash[i] > 0) {
+            cout << char(i + 'a') << " = "
+                 << hash[i] << endl;
+        }
+    }
+}
+
 int main() {
-    maxoccurence();
+    character_frequency();
     return 0;
 }
