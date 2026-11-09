@@ -30,7 +30,31 @@ void everyelemt(){
     cout<<" 3 occure" <<":"<<hash[3]<<endl;
     cout<<" 4 occure" <<":"<<hash[4]<<endl;
 }
+
+void maxoccurence(){
+    int arr[] = {1, 2, 2, 3, 3, 3, 4};
+
+    int max=0;
+    int maxE=0;
+
+    int hash[5]={0};
+    for(int i=0;i<7;i++){
+        hash[arr[i]]++;
+
+    }
+    for(int i=1;i<=4;i++){
+        if(hash[i]>max){
+            max=hash[i];
+            maxE=i;
+        }
+    }
+
+    cout<<max;
+
+
+
+}
 int main() {
-    everyelemt();
+    maxoccurence();
     return 0;
 }
