@@ -76,6 +76,6 @@ void character_frequency() {
 }
 
 int main() {
-    character_frequency();
+    frequency();
     return 0;
 }
