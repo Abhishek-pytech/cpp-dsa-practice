@@ -55,8 +55,7 @@ void maxoccurence(){
 
 }
 
-#include <bits/stdc++.h>
-using namespace std;
+
 
 void character_frequency() {
 
