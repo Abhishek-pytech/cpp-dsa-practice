@@ -74,7 +74,22 @@ void character_frequency() {
     }
 }
 
+void repeating_element(){
+    int arr[] = {1, 5, 3, 4, 3, 5, 6};
+    int hash[7] = {0};
+
+    for (int i = 0; i < 7; i++) {
+        hash[arr[i]]++;
+        if (hash[arr[i]] == 2) {
+            cout << "Repeating element: " << arr[i] << endl;
+            return;
+        }
+    }
+
+    cout << "No repeating element found" << endl;
+}
+
 int main() {
-    frequency();
+    repeating_element();
     return 0;
 }
