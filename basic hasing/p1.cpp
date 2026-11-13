@@ -92,23 +92,41 @@ void repeating_element() {
             break;
         }
     }
-}void minimum_frequency(){
-    int arr[] = {1, 2, 2, 3, 3, 3, 4, 4};
-
-    int hash[5]={0};
-
-    for(int i=0; i<8;i++){
-        hash[arr[i]]++;
-    }
-
-    for(int i=0;i<5;i++){
-        
-    }
-
-    cout<<hash[1];
 }
 
 
+#include <bits/stdc++.h>
+using namespace std;
+
+void minimum_frequency() {
+
+    int arr[] = {1, 2, 2, 3, 3, 3, 4, 4};
+
+    int hash[5] = {0};
+
+    
+    for(int i = 0; i < 8; i++) {
+        hash[arr[i]]++;
+    }
+
+
+    int minFreq = INT_MAX;
+    int minElement = 0;
+
+    
+    for(int i = 1; i <= 4; i++) {
+
+        if(hash[i] > 0 && hash[i] < minFreq) {
+
+            minFreq = hash[i];
+            minElement = i;
+        }
+    }
+
+    
+    cout << "Element: " << minElement << endl;
+    cout << "Frequency: " << minFreq;
+}
 
 int main() {
     minimum_frequency();
