@@ -92,9 +92,25 @@ void repeating_element() {
             break;
         }
     }
+}void minimum_frequency(){
+    int arr[] = {1, 2, 2, 3, 3, 3, 4, 4};
+
+    int hash[5]={0};
+
+    for(int i=0; i<8;i++){
+        hash[arr[i]]++;
+    }
+
+    for(int i=0;i<5;i++){
+        
+    }
+
+    cout<<hash[1];
 }
 
+
+
 int main() {
-    repeating_element();
+    minimum_frequency();
     return 0;
 }
