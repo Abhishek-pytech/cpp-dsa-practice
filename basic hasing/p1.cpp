@@ -67,7 +67,48 @@ void Minimum_frequency(){
     cout<<min;
 }
 
+
+void Highest_LowestFrequency(){
+    int arr[]= {1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5};
+
+    int hash[6]={0};
+
+    for(int i=0;i<12;i++){
+        hash[arr[i]]++;
+    }
+
+    int max=0;
+    int el=0;
+
+    for(int j=1;j<=5;j++){
+        if(hash[j]>max){
+            max=hash[j];
+            el=j;
+        }
+
+    }
+
+    cout<<"max freqency:"<<max<<endl;
+    cout<<el;
+
+
+    int min = INT_MAX;
+    int ell = -1;
+
+    for(int j = 1; j <= 5; j++) {
+        if(hash[j] > 0 && hash[j] < min) {
+        min = hash[j];
+        ell = j;
+    }
+}
+
+    cout << "\nLowest frequency: " << min << endl;
+    cout << "Lowest frequency element: " << ell << endl;
+
+
+}
+
 int main() {
-    Minimum_frequency();
+    Highest_LowestFrequency();
     return 0;
 }
