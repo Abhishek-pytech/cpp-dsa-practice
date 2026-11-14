@@ -1,23 +1,29 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
-void frequency(){
-    int arr[]={1, 2, 3, 2, 4, 2, 5};
-    int  hash[6]={0};
+void frequency() {
 
-    for(int i=0;i<7;i++){
+    int arr[] = {2, 4, 2, 5, 4, 2, 6, 5, 4, 6};
+
+    int n = 10;
+    int hash[7] = {0};
+
+    // Count frequency
+    for(int i = 0; i < n; i++) {
         hash[arr[i]]++;
     }
 
-    for(int j=1;j<6;j++){
-        cout<<hash[j]<<endl;
+    // Print frequency
+    for(int j = 1; j < 7; j++) {
+        if(hash[j] > 0) {
+            cout << "Frequency of " << j
+                 << " = " << hash[j] << endl;
+        }
     }
-
-    
 }
 
 int main() {
     frequency();
-    
     return 0;
 }
