@@ -124,7 +124,23 @@ void userfrequency(){
     cout<<hash[n];
 }
 
+void frequency_of_string(){
+    string s = "programming";
+
+    int hash[26]={0};
+
+    for(int i = 0; i < s.length(); i++){
+        hash[s[i] - 'a']++;
+    }
+
+    for(int j = 0; j < 26; j++){
+        if(hash[j] > 0) {
+            cout << char('a' + j) << ": " << hash[j] << endl;
+        }
+    }
+}
+
 int main() {
-    userfrequency();
+    frequency_of_string();
     return 0;
 }
