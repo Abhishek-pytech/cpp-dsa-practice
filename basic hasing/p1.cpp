@@ -108,7 +108,23 @@ void Highest_LowestFrequency(){
 
 }
 
+
+void userfrequency(){
+    int arr[] = {1, 2, 2, 3, 3, 3, 4, 5, 5};
+    int n;
+    cout<<"enter a number that in arr : ";
+    cin>>n;
+
+    int hash[6]={0};
+
+    for(int i=0;i<9;i++){
+        hash[arr[i]]++;
+    }
+
+    cout<<hash[n];
+}
+
 int main() {
-    Highest_LowestFrequency();
+    userfrequency();
     return 0;
 }
