@@ -43,7 +43,31 @@ void maximum_frequency(){
 
 }
 
+void Minimum_frequency(){
+    int arr []= {1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 5};
+
+    int hash[6]={0};
+
+    for(int i=0;i<11;i++){
+        hash[arr[i]]++;
+    }
+
+    
+
+    int min = INT_MAX;
+    int el = -1;
+
+    for(int j = 1; j <= 5; j++) {
+        if(hash[j] > 0 && hash[j] < min) {
+        min = hash[j];
+        el = j;
+    }
+}
+
+    cout<<min;
+}
+
 int main() {
-    maximum_frequency();
+    Minimum_frequency();
     return 0;
 }
