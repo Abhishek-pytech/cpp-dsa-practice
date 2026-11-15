@@ -158,7 +158,32 @@ void user_frequency(){
     cout << user << ": " << hash[user - 'a'] << endl;
 }
 
+void least_frequent_character() {
+    string s = "programming";
+
+    int hash[26] = {0};
+
+    // Count character frequency
+    for (int i = 0; i < s.size(); i++) {
+        hash[s[i] - 'a']++;
+    }
+
+    int minfreq = INT_MAX;
+    char minChar;
+
+    // Find least frequent character
+    for (int i = 0; i < 26; i++) {
+        if (hash[i] > 0 && hash[i] < minfreq) {
+            minfreq = hash[i];
+            minChar = 'a' + i;
+        }
+    }
+
+    cout << "Least frequent character: " << minChar << endl;
+    cout << "Frequency: " << minfreq << endl;
+}
+
 int main() {
-    user_frequency();
+    least_frequent_character();
     return 0;
 }
