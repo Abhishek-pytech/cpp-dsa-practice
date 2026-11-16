@@ -159,7 +159,7 @@ void user_frequency(){
 }
 
 void least_frequent_character() {
-    string s = "programminglang";
+    string s = "programminglangauge is :";
 
     int hash[26] = {0};
 
