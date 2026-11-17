@@ -1,22 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int selection_sort(){
-     int n;
-    cout<<"enter arr size:";
-    cin>>n;
-    int arr[n];
+void selection_sort(){
+    int arr[] = {5, 3, 8, 1, 4};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int ans;
 
-    for(int i=0;i<n;i++){
-        cin>> arr[i];
+    for(int i=0;i<n-2;i++){
+        int min_index=i;
+
+        for(int j=i;j<n;j++){
+            if(arr[j]< arr[min_index])
+            min_index=j;
+
+        }
+        swap(arr[min_index], arr[i]);
     }
 
-    for(int i=0;i<n;i++){
+    for(int i = 0; i < n; i++){
         cout << arr[i] << " ";
     }
+
+    
      
 }
 int main(){
-   cout<<selection_sort();
+    selection_sort();
     return 0;
 }
