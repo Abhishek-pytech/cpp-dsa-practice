@@ -6,7 +6,7 @@ void selection_sort(){
     int n = sizeof(arr) / sizeof(arr[0]);
     int ans;
 
-    for(int i=0;i<n-2;i++){
+    for(int i=0;i<=n-2;i++){
         int min_index=i;
 
         for(int j=i;j<n;j++){
