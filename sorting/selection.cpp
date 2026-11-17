@@ -13,8 +13,9 @@ void selection_sort(){
             if(arr[j]<arr[min_index]){
                 min_index=j;
             }
-            swap(arr[i],arr[min_index]);
+            
         }
+        swap(arr[i],arr[min_index]);
 
         
     }
