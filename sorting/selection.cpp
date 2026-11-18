@@ -23,12 +23,12 @@ void selection_sort() {
 }
 
 void bubble_sort() {
-    int arr[] = {5, 3, 8, 1, 4};
+    int arr[] = {5, 3, 8, 1, 2};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     for (int i = n - 1; i >= 1; i--) {
         for (int j = 0; j < i; j++) {
-            if (arr[j] > arr[j + 1]) {
+            if (arr[j] < arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
             }
         }
