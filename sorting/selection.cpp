@@ -46,12 +46,12 @@ void bubble_sort() {
 }
 
 void insertion_sort(){
-    int arr[] = {7, 4, 5, 2, 9};
+    int arr[] = {10, 5, 10, 3, 8, 3};
     int n = sizeof(arr) / sizeof(arr[0]);
     for(int i=0;i<n;i++){
 
             int j=i;
-            while(j>0 && arr[j-1]<arr[j]){
+            while(j>0 && arr[j-1]>arr[j] && arr[j-1]!=arr[j]){
                 swap(arr[j-1],arr[j]);
                 j--;
             }
