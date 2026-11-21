@@ -46,7 +46,7 @@ void bubble_sort() {
 }
 
 void insertion_sort(){
-    int arr[] = {10, 5, 10, 3, 8, 3};
+    int arr[] = {10, 5, 10, 3, 8, 3,1,2};
     int n = sizeof(arr) / sizeof(arr[0]);
     for(int i=0;i<n;i++){
 
