@@ -105,7 +105,7 @@ void mergesort(vector<int>& arr, int low, int high){
 }
 
 void callingmergesort(){
-    vector<int> arr = {10, 7, 8, 9, 1, 5};
+    vector<int> arr = {10, 7, 8, 9, 1, 5,7};
 
     int n = arr.size();
 
@@ -159,7 +159,7 @@ void quickSort(vector<int>& arr, int low, int high) {
     }
 }
 
-// Only one function call inside main
+
 void callingquicksort() {
 
     vector<int> arr = {10, 7, 8, 9, 1, 5};
