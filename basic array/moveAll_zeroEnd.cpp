@@ -40,7 +40,22 @@ void MoveZero(){
     }
 }
 
+void removeDublicate(){
+    int arr[]={0, 0, 3, 3, 5, 6};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    set<int>st;
+    for(int i=0;i<n;i++){
+        st.insert(arr[i]);
+    }
+    int cnt=0;
+    for(int num : st){
+        cout << num << " ";
+        cnt++;
+    }
+    cout<<cnt;
+}
+
 int main(){
-    MoveZero();
+    removeDublicate();
     return 0;
 }
