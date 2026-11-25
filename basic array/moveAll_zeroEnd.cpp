@@ -49,7 +49,7 @@ void removeDublicate(){
     }
     int cnt=0;
     for(int num : st){
-        cout << num << " ";
+        
         cnt++;
     }
     cout<<cnt;
