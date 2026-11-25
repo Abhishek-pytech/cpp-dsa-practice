@@ -25,7 +25,7 @@ void MoveAll_zeroEnd(){
 }
 
 void MoveZero(){
-    int arr[]={0, 1, 4,0,0,0,0,0,0,4,7,8,9,3,4, 0, 5, 2};
+    int arr[]={0, 1, 4,0,0,0,4,7,8,9,3,4, 0, 5, 2};
     int n=sizeof(arr)/sizeof(arr[0]);
     int j=0;
     for(int i=0;i<n;i++){
