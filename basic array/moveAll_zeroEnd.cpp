@@ -49,13 +49,32 @@ void removeDublicate(){
     }
     int cnt=0;
     for(int num : st){
-        
+        cout << num << " ";
         cnt++;
     }
     cout<<cnt;
 }
+void Removedubli(){
+    int arr[]={0,0,3,5,6};
+    vector<int>temp;
+    int n=sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<1;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]!=arr[j]){
+                temp.push_back(arr[j]);
+            }
+            else if(arr[i]==arr[j]){
+                temp.push_back(arr[j]);
+            }
+        }
+    }
+    for(auto it:temp){
+        cout<< it << " ";
+    }
+}
 
 int main(){
-    removeDublicate();
+    
+    Removedubli();
     return 0;
 }
