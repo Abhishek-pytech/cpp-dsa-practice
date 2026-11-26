@@ -68,9 +68,11 @@ void Removedubli(){
             }
         }
     }
+    int cnt=0;
     for(auto it:temp){
-        cout<< it << " ";
+        cnt++;
     }
+    cout<<cnt;
 }
 
 int main(){
