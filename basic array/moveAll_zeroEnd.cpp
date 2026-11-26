@@ -74,9 +74,19 @@ void Removedubli(){
     }
     cout<<cnt;
 }
+void union_of_2arr(){
+    int arr1[]={1,4,7,1,4};
+    int arr2[]={3,9,6,4,2};
+
+    set<int> result;
+    for (int num : arr1) result.insert(num);
+    for (int num : arr2) result.insert(num);
+
+    for (int num : result) cout << num << " ";
+}
 
 int main(){
     
-    Removedubli();
+    union_of_2arr();
     return 0;
 }
