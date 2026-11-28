@@ -133,7 +133,7 @@ void majorityofelement(){
     
 }
 void Leaders (){
-    int arr[]={1, 2, 5, 3, 1, 2};
+    int arr[]={1, 2, 5, 3, 1, 2,9,8,6};
     vector<int>ans;
     int n=sizeof(arr)/sizeof(arr[0]);
 
