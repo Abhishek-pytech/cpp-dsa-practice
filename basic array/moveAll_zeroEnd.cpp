@@ -132,9 +132,31 @@ void majorityofelement(){
     
     
 }
+void Leaders (){
+    int arr[]={1, 2, 5, 3, 1, 2};
+    vector<int>ans;
+    int n=sizeof(arr)/sizeof(arr[0]);
+
+    for(int i=0;i<n;i++){
+        bool leader=true;
+        for(int j=i+1;j<n;j++){
+                if(arr[j]>arr[i]){
+                    leader=false;
+                    break;
+                }
+        }
+        if(leader==true){
+            ans.push_back(arr[i]);
+
+        }
+    }
+    for(auto num: ans){
+        cout<<num<< " ";
+    }
+}
 
 int main(){
     
-    majorityofelement();
+    Leaders ();
     return 0;
 }
